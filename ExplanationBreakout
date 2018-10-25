@@ -39,14 +39,14 @@ void draw() {             // drawing objects
 
 	background(000);				// background color is black
 
-	surface.setTitle("Breakout");          // name title of the screen
-	noStroke();                          // nothing outlines
+  surface.setTitle("Breakout");          // name title of the screen
+  noStroke();                          // nothing outlines
 
-	for (int i = 0; i < length; i++) {   // make 28 blocks
-		if (visible[i] == 1) {             // if blocks are switched on visible
+  for (int i = 0; i < length; i++) {   // make 28 blocks
+  	if (visible[i] == 1) {             // if blocks are switched on visible
 		rect(X[i], Y[i], 60, 30);          // size of a block
 		}
-	}
+  }
 
   for (int ii = 0; ii < 1; ii++) {          // array of balls
     for (int i = 0; i < length; i++) {      // array of blocks
@@ -62,7 +62,7 @@ void draw() {             // drawing objects
     }
   }
 
-  rect(mouseX - 35, 650, 70, 10);	         // paddle
+	rect(mouseX - 35, 650, 70, 10);	         // paddle
 
   for (int ii = 0; ii < 1; ii++) {          // array of balls
     if (visibleBall[ii] == 1) {         // if switch on for collision of balls
